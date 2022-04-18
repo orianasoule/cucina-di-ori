@@ -118,42 +118,12 @@
     /*FIN DE INDEX*/
 
     /*INICIO PRODUCTOS*/
-    /*galeria de productos*/
-    .products-container { 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 600px;
-        grid-gap: 8px;
-        grid-auto-flow: dense;
-        min-height: 100px;
-        margin: 20px;
-        margin-bottom: 100px;
+    .w-100 {
+        width: 40%!important;
+        margin:auto;
     }
-    .img-products{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-color: white;
-    }
-    .item-img-products{
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-    .item-img-products img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 50% 50%;
-    }
-    /*fin de la galeria de productos*/
-    .products{ /*listas de productos*/
-        display: table-cell;
-        overflow: hidden;
-        flex-direction: column;
-        width: 800px; 
-        text-align: center;
-        font-size: x-large;;
+    .carousel{
+        background: linear-gradient(to left, #e0f7f0,white, #e6fcf6 );
     }
     /*FIN DE PRODUCTOS*/
 
@@ -272,7 +242,7 @@
     /*galeria inicio*/
     .gallery-container { 
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(1, auto);
         grid-auto-rows: 150px;
         grid-gap: 8px;
         grid-auto-flow: dense;
