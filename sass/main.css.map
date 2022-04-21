@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "_variable.scss",
+        "_body.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
