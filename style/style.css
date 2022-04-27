@@ -20,9 +20,7 @@
         justify-content: center;
         background-color: #5fb49c;
     }
-    .navbar-light .navbar-nav .nav-link {
-        color: rgb(255 255 255);
-    }
+
     .nav-item {
         text-decoration: none;
         font-size: x-large;
