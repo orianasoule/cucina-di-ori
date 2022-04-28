@@ -5,3 +5,4 @@ Sume accordion en productos.
 Corregi errores del nav.
 corregi en style.css las @medias
 Sume sass a todo el proyecto.
+Sume maps, map-get, extend, mixin en sass. Agregue meta keywords, titulo, encabezado y meta description a mis html.
