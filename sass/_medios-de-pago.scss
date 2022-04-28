@@ -1,6 +1,6 @@
    /*INICIO DE MEDIOS DE PAGO*/
    .fondo-mp{
-    background: linear-gradient(to top, $segundoColor, #d5f8ee);
+    background: linear-gradient(to top, $colorSecundario, #d5f8ee);
     .img3{ /*imagen en medios de pago*/
         height: 25%;
         width: 25%;
@@ -10,7 +10,7 @@
     }
     .medios-de-pago{
         line-height: 2;
-        color: #050706;
+        color: $colorTerciario;
         text-align: center;
         font-size: x-large;
     }

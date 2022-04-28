@@ -2,22 +2,20 @@
     margin: 0;
     padding: 0;
 }
-$colorPrincipal: #5fb49c;
 $fontPrincipal: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-$segundoColor: white;
+$colorPrimario:#5fb49c;
+$colorSecundario: white;
+$colorTerciario: black;
 
-@import 'index';
-@import 'productos';
-@import 'preguntas-freccuentes';
-@import 'contacto';
-@import 'medios-de-pago';
-
-
-    /*PARA TODAS LAS PAGINAS*/
+/*PARA TODAS LAS PAGINAS*/
 body {
     font-family: $fontPrincipal;
 }
     /*logo*/
+@mixin sizes ($height, $width){
+    height: $height;
+    width: $width;    
+}
 .img-logo { 
     display: flex;
     justify-content: center;
@@ -31,7 +29,7 @@ body {
     /*nav bar*/
 .collapse { 
     justify-content: center;
-    background-color: $colorPrincipal;
+    background-color: $colorPrimario;
     .nav-item {
         text-decoration: none;
         font-size: x-large;
@@ -45,32 +43,38 @@ li{
     text-align: center;
     li a {
         text-decoration: none;
-        color: $segundoColor;
-        font-size: smal;
+        color: $colorSecundario;
+        font-size: small;
         padding: 20px;
         display: block;
     }
 }
+$estilos:( /*map*/
+    color: $colorTerciario,
+    espacio:30px,
+);
 .redes{ /*redes sociales del pie de pagina*/
-    right: 0px;
-    font-size: 30px;
+    font-size: 40px;
+    z-index: 100; 
+    text-decoration: none;
     display:flex;
     flex-direction:row;
     align-items: flex-end;
-    z-index: 100;
-    justify-content: right;  
-    color: #050706;
-    z-index: 100;
-    text-decoration: none;
-    .bi{ /*pie de pagina*/
-        letter-spacing: 5px;
-        color: #050706;
-        }
+    justify-content: center;
+    .bi{
+        color: map-get($estilos , color );
+        letter-spacing: map-get($estilos , espacio );
+    }
 }
 .titulo{ /*todos los titulos*/
-    color: $colorPrincipal;
+    color: $colorPrimario;
     text-align: center;
 }
+@import 'index';
+@import 'productos';
+@import 'preguntas-frecuentes';
+@import 'contacto';
+@import 'medios-de-pago';
 @media screen and (min-width: 200px) and (max-width: 560px) {
     .img-logo { /*logo*/
         display: flex;
@@ -84,7 +88,7 @@ li{
     }
     li a {
         text-decoration: none;
-        color: $segundoColor;
+        color: $colorSecundario;
         font-size: small;
         padding: 20px;
         display: block;
@@ -103,7 +107,7 @@ li{
     /*MEDIOS DE PAGO*/
     .medios-de-pago{
         line-height: 2;
-        color: #050706;
+        color: $colorTerciario;
         text-align: center;
         font-size: medium;
     }

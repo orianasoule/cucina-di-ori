@@ -1,10 +1,10 @@
    /*INICIO PREGUNTAS FRECUENTES*/
    .preguntas-frecuentes{
     line-height: 2;
-    color: #050706;
+    color:$colorTerciario;
     text-align: center;
     font-size: x-large;
-    background: linear-gradient(to bottom, $segundoColor $colorPrincipal);
+    background: linear-gradient(to bottom, $colorSecundario $colorPrimario);
 }
 .ubicacion{
     height: 50%;

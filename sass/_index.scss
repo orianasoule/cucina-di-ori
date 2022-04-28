@@ -1,0 +1,42 @@
+ /*INICIO INDEX*/
+ @mixin sizes ($height, $width){
+    height: $height;
+    width: $width;    
+}
+ .gallery-container { /*galeria*/
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: 350px;
+    grid-gap: 8px;
+    grid-auto-flow: dense;
+    min-height: 100px;
+    margin: 20px;
+    margin-bottom: 100px;
+    & :nth-child(2){
+        grid-column: span 1,5;
+        grid-row: span 2;
+    }
+    .img-gallery{
+        @include sizes(100%,100% );
+        position: relative;
+        background-color: $colorSecundario;
+    }
+    .item-img-gallery{
+        @include sizes(100%,100% );
+        overflow: hidden;
+    }
+    img{
+        @include sizes(100%,100% );
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+article{ /*texto*/
+    font-size: xx-large;
+    text-align: center;
+    line-height: 2.3;
+}
+.animate__backInLeft .animate__backInRight .animate__backInDown{ /*animacion*/
+    --animate-repeat: none;   
+}
+    /*FIN DE INDEX*/

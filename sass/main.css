@@ -49,15 +49,16 @@ li {
 li li a {
   text-decoration: none;
   color: white;
-  font-size: smal;
+  font-size: small;
   padding: 20px;
   display: block;
 }
 
 .redes {
   /*redes sociales del pie de pagina*/
-  right: 0px;
-  font-size: 30px;
+  font-size: 40px;
+  z-index: 100;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,19 +69,14 @@ li li a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  z-index: 100;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  color: #050706;
-  z-index: 100;
-  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .redes .bi {
-  /*pie de pagina*/
-  letter-spacing: 5px;
-  color: #050706;
+  color: black;
+  letter-spacing: 30px;
 }
 
 .titulo {
@@ -112,21 +108,21 @@ li li a {
 }
 
 .gallery-container .img-gallery {
-  width: 100%;
   height: 100%;
+  width: 100%;
   position: relative;
   background-color: white;
 }
 
 .gallery-container .item-img-gallery {
-  width: 100%;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .gallery-container img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
@@ -161,7 +157,7 @@ article {
 /*INICIO PREGUNTAS FRECUENTES*/
 .preguntas-frecuentes {
   line-height: 2;
-  color: #050706;
+  color: black;
   text-align: center;
   font-size: x-large;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(#5fb49c, white));
@@ -185,7 +181,7 @@ article {
   text-align: center;
 }
 
-.mb-3 .btn {
+.btn1, .btn2 {
   color: #5fb49c;
   background-color: #c5ece1;
   border-color: #5fb49c;
@@ -209,7 +205,7 @@ article {
 
 .fondo-mp .medios-de-pago {
   line-height: 2;
-  color: #050706;
+  color: black;
   text-align: center;
   font-size: x-large;
 }
@@ -254,7 +250,7 @@ article {
   /*MEDIOS DE PAGO*/
   .medios-de-pago {
     line-height: 2;
-    color: #050706;
+    color: black;
     text-align: center;
     font-size: medium;
   }
