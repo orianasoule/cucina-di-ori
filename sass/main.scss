@@ -12,10 +12,6 @@ body {
     font-family: $fontPrincipal;
 }
     /*logo*/
-@mixin sizes ($height, $width){
-    height: $height;
-    width: $width;    
-}
 .img-logo { 
     display: flex;
     justify-content: center;
