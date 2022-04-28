@@ -2,163 +2,75 @@
     margin: 0;
     padding: 0;
 }
+$colorPrincipal: #5fb49c;
+$fontPrincipal: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$segundoColor: white;
+
+@import 'index';
+@import 'productos';
+@import 'preguntas-freccuentes';
+@import 'contacto';
+@import 'medios-de-pago';
+
+
     /*PARA TODAS LAS PAGINAS*/
-    body{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+body {
+    font-family: $fontPrincipal;
+}
+    /*logo*/
+.img-logo { 
+    display: flex;
+    justify-content: center;
+    .logo{ 
+        height: 200px;
+        width: 220px;
+        padding: 5px; 
+        background-image: none; 
     }
-    .img-logo { /*logo*/
-        display: flex;
-        justify-content: center;
-        .logo{ 
-            height: 200px;
-            width: 220px;
-            padding: 5px; 
-            background-image: none; 
-        }
-    }
-
-    .collapse { /*nav bar*/
-        justify-content: center;
-        background-color: #5fb49c;
-        .nav-item {
-            text-decoration: none;
-            font-size: x-large;
-            padding: 10px;
-            display: inline-block;
-            text-align: center;
-        }
-    }
-
-
-    li{
+}
+    /*nav bar*/
+.collapse { 
+    justify-content: center;
+    background-color: $colorPrincipal;
+    .nav-item {
+        text-decoration: none;
+        font-size: x-large;
+        padding: 10px;
         display: inline-block;
         text-align: center;
-        li a {
-            text-decoration: none;
-            color: white;
-            font-size: smal;
-            padding: 20px;
-            display: block;
-        }
     }
-    .redes{ /*redes sociales del pie de pagina*/
-        right: 0px;
-        font-size: 30px;
-        display:flex;
-        flex-direction:row;
-        align-items: flex-end;
-        z-index: 100;
-        justify-content: right;  
-        color: #050706;
-        z-index: 100;
+}
+li{
+    display: inline-block;
+    text-align: center;
+    li a {
         text-decoration: none;
-        .bi{ /*pie de pagina*/
-            letter-spacing: 5px;
-            color: #050706;
-        }
-    }
-    .titulo{ /*todos los titulos*/
-        color: #5fb49c;
-        text-align: center;
-    }
-
-    /*INICIO INDEX*/
-    .gallery-container { /*galeria*/
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-auto-rows: 350px;
-        grid-gap: 8px;
-        grid-auto-flow: dense;
-        min-height: 100px;
-        margin: 20px;
-        margin-bottom: 100px;
-        & :nth-child(2){
-            grid-column: span 1,5;
-            grid-row: span 2;
-        }
-        .img-gallery{
-            width: 100%;
-            height: 100%;
-            position: relative;
-            background-color: white;
-        }
-        .item-img-gallery{
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-        }
-    }
-    article{ /*texto*/
-        font-size: xx-large;
-        text-align: center;
-        line-height: 2.3;
-    }
-    .animate__backInLeft .animate__backInRight .animate__backInDown{ /*animacion*/
-        --animate-repeat: none;   
-    }
-    /*FIN DE INDEX*/
-    /*INICIO PRODUCTOS*/
-    .carousel{
-        background: linear-gradient(to left, #e0f7f0,white, #e6fcf6 );
-        .w-100 {
-            width: 40%!important;
-            margin:auto;
-        }
-    }
-    /*FIN DE PRODUCTOS*/
-    /*INICIO PREGUNTAS FRECUENTES*/
-    .preguntas-frecuentes{
-        line-height: 2;
-        color: #050706;
-        text-align: center;
-        font-size: x-large;
-        background: linear-gradient(to bottom, white, #5fb49c);
-    }
-    .ubicacion{
-        height: 50%;
-        width: 50%;
+        color: $segundoColor;
+        font-size: smal;
+        padding: 20px;
         display: block;
-        overflow: hidden;
-        margin: 0px auto;
-        border-radius: 15px 15px 15px 15px;
     }
-    /*FIN PREGUNTAS FRECUENTES*/
-    /*INICIO CONTACTO*/
-    .mb-3{ /*formulario*/
-        background-color: #c5ece1;
-        text-align: center;
-        .btn{
-            color: #5fb49c;
-            background-color: #c5ece1;
-            border-color:#5fb49c;
+}
+.redes{ /*redes sociales del pie de pagina*/
+    right: 0px;
+    font-size: 30px;
+    display:flex;
+    flex-direction:row;
+    align-items: flex-end;
+    z-index: 100;
+    justify-content: right;  
+    color: #050706;
+    z-index: 100;
+    text-decoration: none;
+    .bi{ /*pie de pagina*/
+        letter-spacing: 5px;
+        color: #050706;
         }
-    }
-    /*FIN DE CONTACTO*/
-    /*INICIO DE MEDIOS DE PAGO*/
-    .fondo-mp{
-        background: linear-gradient(to top, white, #d5f8ee);
-        .img3{ /*imagen en medios de pago*/
-            height: 25%;
-            width: 25%;
-            display: block;
-            overflow: hidden;
-            margin: 0px auto;
-        }
-        .medios-de-pago{
-            line-height: 2;
-            color: #050706;
-            text-align: center;
-            font-size: x-large;
-        }
-    }
-    /*FIN DE MEDIOS DE PAGO*/
-
+}
+.titulo{ /*todos los titulos*/
+    color: $colorPrincipal;
+    text-align: center;
+}
 @media screen and (min-width: 200px) and (max-width: 560px) {
     .img-logo { /*logo*/
         display: flex;
@@ -172,19 +84,14 @@
     }
     li a {
         text-decoration: none;
-        color: rgb(250, 248, 248);
+        color: $segundoColor;
         font-size: small;
         padding: 20px;
         display: block;
     }
     /*INDEX*/
     .gallery-container { /*galeria*/
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-auto-rows: 150px;
-        grid-gap: 8px;
-        grid-auto-flow: dense;
-        min-height: 100px;
+        min-height: 150px;
         margin: 20px;
         margin-bottom: 100px;
     }

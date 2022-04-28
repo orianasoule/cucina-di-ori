@@ -4,4 +4,4 @@ Agregue carrusel en productos.
 Sume accordion en productos. 
 Corregi errores del nav.
 corregi en style.css las @medias
-cree el archivo sass para medios de pago.
+Sume sass a todo el proyecto.
