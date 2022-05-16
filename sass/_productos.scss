@@ -2,8 +2,12 @@
     .carousel{
         background: linear-gradient(to left, #e0f7f0,$colorSecundario, #e6fcf6 );
         .w-100 {
-            width: 40%!important;
+            width: 50%!important;
             margin:auto;
         }
+    }
+    .accordion-button:focus{
+        color: $colorTerciario; 
+        background-color: $colorSecundario; 
     }
     /*FIN DE PRODUCTOS*/

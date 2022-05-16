@@ -149,8 +149,13 @@ article {
 }
 
 .carousel .w-100 {
-  width: 40% !important;
+  width: 50% !important;
   margin: auto;
+}
+
+.accordion-button:focus {
+  color: black;
+  background-color: white;
 }
 
 /*FIN DE PRODUCTOS*/
